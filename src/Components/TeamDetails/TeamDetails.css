@@ -1,0 +1,14 @@
+.team-details-card {
+    background-color: rgb(72, 72, 212);
+    color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.team-details-article {
+    margin-top: 5rem;
+}
+.footer {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
