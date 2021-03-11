@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import TeamCard from '../TeamCard/TeamCard';
+import './Body.css';
 
 const Body = () => {
     const [team, setTeam] = useState([]);
@@ -14,18 +15,16 @@ const Body = () => {
 
     return (
         <div className="container mt-5">
+            <div className="banner">
+                <br/><br/><br/><br/><br/>
+                <h1>Team Tracker</h1>
+            </div>
             <div className="row">
                 {
                     team.map(team => <TeamCard bodyToCard={team}></TeamCard>)
                 }
-
             </div>
         </div>
-        // <div>
-        //   {
-        //       team.map(team => <TeamCard bodyToCard={team}></TeamCard>)
-        //   } 
-        // </div> */}
     );
 };
 

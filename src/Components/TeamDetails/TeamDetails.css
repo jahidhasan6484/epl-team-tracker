@@ -1,25 +1,30 @@
+.team-details-style {
+background-color: brown;
+}
 .details-card {
     background-color: rgb(42, 42, 250);
     color: white;
     border-radius: 2rem;
-    /* padding: 2rem; */
-    margin-top: 2rem;
+    padding: 3rem;
+    margin-top: 5rem;
+}
+.details-card p {
+    font-size: 1.5rem;
 }
 .details-article {
     margin-top: 2rem;
     padding-left: 7rem;
     padding-right: 7rem;
+    font-size: 1.15rem;
 }
 .footer {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    padding-bottom: 10rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center;
 }
 .details-header {
     text-align: center;
 }
 .team-details {
-    background-color: rgb(1, 1, 32);
     color: white;
 }

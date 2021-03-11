@@ -7,6 +7,9 @@ import facebookIcon from '../Icon/Facebook.png';
 import twitterIcon from '../Icon/Twitter.png';
 import youtubeIcon from '../Icon/YouTube.png';
 import './TeamDetails.css';
+import maleImage from '../Photo/Rectangle 28.png';
+import femaleImage from '../Photo/female.png';
+
 
 const TeamDetails = () => {
     const { idTeam } = useParams();
@@ -22,25 +25,30 @@ const TeamDetails = () => {
 
     return (
 
-        <div className="container my-5">
-            <Card className="details-header">
-                <Card.Img src={teamDetails.strStadiumThumb} alt="" height="400rem" />
-                <Card.ImgOverlay>
-                    <img className="img-fluid" src={teamDetails.strTeamBadge} alt="" width="200rem" />
-                </Card.ImgOverlay>
-            </Card>
+        <div className="container my-5 team-details-style">
+            <div>
+                <Card className="details-header">
+                    <Card.Img src={teamDetails.strStadiumThumb} alt="" height="400rem" />
+                    <Card.ImgOverlay>
+                        <img className="img-fluid" src={teamDetails.strTeamBadge} alt="" width="200rem" />
+                    </Card.ImgOverlay>
+                </Card>
+            </div>
+
 
             <div className="team-details">
                 <div className="row details-card">
                     <div className="col-md-6">
                         <h1>{teamDetails.strTeam}</h1>
-                        <h3><FontAwesomeIcon icon={faMapMarker} /> Founded: {teamDetails.intFormedYear}</h3>
-                        <h3><FontAwesomeIcon icon={faFlag} /> Country: {teamDetails.strCountry}</h3>
-                        <h3><FontAwesomeIcon icon={faFutbol} /> Sport Type: {teamDetails.strSport}</h3>
-                        <h3><FontAwesomeIcon icon={faMarsStroke} />  Gender: {teamDetails.strGender}</h3>
+                        <p><FontAwesomeIcon icon={faMapMarker} /> Founded: {teamDetails.intFormedYear}</p>
+                        <p><FontAwesomeIcon icon={faFlag} /> Country: {teamDetails.strCountry}</p>
+                        <p><FontAwesomeIcon icon={faFutbol} /> Sport Type: {teamDetails.strSport}</p>
+                        <p><FontAwesomeIcon icon={faMarsStroke} />  Gender: {teamDetails.strGender}</p>
                     </div>
                     <div className="col-md-6">
-                        <img className="img-fluid" src={teamDetails.strTeamLogo} alt="" />
+                        {
+                            teamDetails.strGender === "Male" ? <img className="img-fluid" src={maleImage} alt="" /> : <img className="img-fluid" src={femaleImage} alt="" />
+                        }
                     </div>
                 </div>
                 <div className="details-article">
@@ -49,7 +57,7 @@ const TeamDetails = () => {
                 <div className="footer">
                     <Container>
                         <Row>
-                        <Col xs={6} md={4}>
+                            <Col xs={6} md={4}>
                                 <a href={`https://${teamDetails.strTwitter}`} target="_blank"><Image src={twitterIcon} roundedCircle width="50px" /></a>
                             </Col>
                             <Col xs={6} md={4}>
