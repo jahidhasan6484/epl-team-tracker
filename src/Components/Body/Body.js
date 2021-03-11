@@ -17,7 +17,7 @@ const Body = () => {
         <div className="container mt-5">
             <div className="banner">
                 <br/><br/><br/><br/><br/>
-                <h1>Team Tracker</h1>
+                <h1>EPL Team Tracker</h1>
             </div>
             <div className="row">
                 {

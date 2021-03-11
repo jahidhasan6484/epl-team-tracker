@@ -23,14 +23,16 @@ const TeamDetails = () => {
             .then(data => setTeamDetails(data.teams[0]))
     }, [idTeam])
 
+    const {strStadiumThumb, strTeamBadge, strTeam, intFormedYear, strCountry, strSport, strGender, strDescriptionEN, strTwitter, strFacebook, strYoutube } = teamDetails;
+
     return (
 
         <div className="container my-5 team-details-style">
             <div>
                 <Card className="details-header">
-                    <Card.Img src={teamDetails.strStadiumThumb} alt="" height="400rem" />
+                    <Card.Img src={strStadiumThumb} alt="" height="400rem" />
                     <Card.ImgOverlay>
-                        <img className="img-fluid" src={teamDetails.strTeamBadge} alt="" width="200rem" />
+                        <img className="img-fluid" src={strTeamBadge} alt="" width="200rem" />
                     </Card.ImgOverlay>
                 </Card>
             </div>
@@ -39,11 +41,11 @@ const TeamDetails = () => {
             <div className="team-details">
                 <div className="row details-card">
                     <div className="col-md-6">
-                        <h1>{teamDetails.strTeam}</h1>
-                        <p><FontAwesomeIcon icon={faMapMarker} /> Founded: {teamDetails.intFormedYear}</p>
-                        <p><FontAwesomeIcon icon={faFlag} /> Country: {teamDetails.strCountry}</p>
-                        <p><FontAwesomeIcon icon={faFutbol} /> Sport Type: {teamDetails.strSport}</p>
-                        <p><FontAwesomeIcon icon={faMarsStroke} />  Gender: {teamDetails.strGender}</p>
+                        <h1>{strTeam}</h1>
+                        <p><FontAwesomeIcon icon={faMapMarker} /> Founded: {intFormedYear}</p>
+                        <p><FontAwesomeIcon icon={faFlag} /> Country: {strCountry}</p>
+                        <p><FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}</p>
+                        <p><FontAwesomeIcon icon={faMarsStroke} />  Gender: {strGender}</p>
                     </div>
                     <div className="col-md-6">
                         {
@@ -52,19 +54,19 @@ const TeamDetails = () => {
                     </div>
                 </div>
                 <div className="details-article">
-                    <p>{teamDetails.strDescriptionEN}</p>
+                    <p>{strDescriptionEN}</p>
                 </div>
                 <div className="footer">
                     <Container>
                         <Row>
                             <Col xs={6} md={4}>
-                                <a href={`https://${teamDetails.strTwitter}`} target="_blank"><Image src={twitterIcon} roundedCircle width="50px" /></a>
+                                <a href={`https://${strTwitter}`} target="_blank"><Image src={twitterIcon} roundedCircle width="50px" /></a>
                             </Col>
                             <Col xs={6} md={4}>
-                                <a href={`https://${teamDetails.strFacebook}`} target="_blank"><Image src={facebookIcon} roundedCircle width="50px" /></a>
+                                <a href={`https://${strFacebook}`} target="_blank"><Image src={facebookIcon} roundedCircle width="50px" /></a>
                             </Col>
                             <Col xs={6} md={4}>
-                                <a href={`https://${teamDetails.strYoutube}`} target="_blank"><Image src={youtubeIcon} roundedCircle width="50px" /></a>
+                                <a href={`https://${strYoutube}`} target="_blank"><Image src={youtubeIcon} roundedCircle width="50px" /></a>
                             </Col>
                         </Row>
                     </Container>
