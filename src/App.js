@@ -8,6 +8,7 @@ import {
   Link
 } from "react-router-dom";
 import TeamDetails from './Components/TeamDetails/TeamDetails';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <TeamDetails></TeamDetails>
         </Route>
         <Route path="*">
-          <h1 className="text-center my-5">404 - Not Found!</h1>
+          <NotFound></NotFound>
         </Route>
       </Switch>
     </Router>

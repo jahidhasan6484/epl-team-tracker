@@ -1,11 +1,11 @@
 .team-details-style {
-background-color: brown;
+background-color: white;
 }
 .details-card {
-    background-color: rgb(42, 42, 250);
+    background-color: black;
     color: white;
     border-radius: 2rem;
-    padding: 3rem;
+    padding: 2rem;
     margin-top: 5rem;
 }
 .details-card p {
@@ -13,8 +13,6 @@ background-color: brown;
 }
 .details-article {
     margin-top: 2rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
     font-size: 1.15rem;
 }
 .footer {
@@ -26,5 +24,7 @@ background-color: brown;
     text-align: center;
 }
 .team-details {
-    color: white;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: black;
 }

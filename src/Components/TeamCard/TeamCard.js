@@ -3,12 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './TeamCard.css';
 
 const TeamCard = (props) => {
     const { strTeam, strSport, idTeam, strTeamBadge } = props.bodyToCard;
     return (
         <div className="col-md-4 my-3">
-            <Card>
+            <Card className="team-card" >
                 <Card.Img variant="top" src={strTeamBadge} />
                 <Card.Body>
                     <div className="text-center">
