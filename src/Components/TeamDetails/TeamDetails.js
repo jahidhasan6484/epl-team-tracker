@@ -49,14 +49,14 @@ const TeamDetails = () => {
                 <div className="footer">
                     <Container>
                         <Row>
-                            <Col xs={6} md={4}>
-                                <Image src={twitterIcon} roundedCircle width="50px" />
+                        <Col xs={6} md={4}>
+                                <a href={`https://${teamDetails.strTwitter}`} target="_blank"><Image src={twitterIcon} roundedCircle width="50px" /></a>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Image src={facebookIcon} roundedCircle width="50px" />
+                                <a href={`https://${teamDetails.strFacebook}`} target="_blank"><Image src={facebookIcon} roundedCircle width="50px" /></a>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Image src={youtubeIcon} roundedCircle width="50px" />
+                                <a href={`https://${teamDetails.strYoutube}`} target="_blank"><Image src={youtubeIcon} roundedCircle width="50px" /></a>
                             </Col>
                         </Row>
                     </Container>

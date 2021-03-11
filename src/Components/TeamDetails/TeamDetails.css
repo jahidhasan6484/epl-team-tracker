@@ -2,7 +2,8 @@
     background-color: rgb(42, 42, 250);
     color: white;
     border-radius: 2rem;
-    padding: 2rem;
+    /* padding: 2rem; */
+    margin-top: 2rem;
 }
 .details-article {
     margin-top: 2rem;
