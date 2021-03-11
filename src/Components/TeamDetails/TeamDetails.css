@@ -1,14 +1,24 @@
-.team-details-card {
-    background-color: rgb(72, 72, 212);
+.details-card {
+    background-color: rgb(42, 42, 250);
     color: white;
-    padding: 2rem;
     border-radius: 2rem;
+    padding: 2rem;
 }
-.team-details-article {
-    margin-top: 5rem;
+.details-article {
+    margin-top: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 .footer {
     margin-top: 10rem;
     margin-bottom: 10rem;
+    padding-bottom: 10rem;
     text-align: center;
+}
+.details-header {
+    text-align: center;
+}
+.team-details {
+    background-color: rgb(1, 1, 32);
+    color: white;
 }
