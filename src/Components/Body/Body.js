@@ -16,7 +16,7 @@ const Body = () => {
     return (
         <div className="container mt-5">
             <div className="banner">
-                <br/><br/><br/><br/><br/>
+                <br /><br /><br /><br /><br />
                 <h1>EPL Team Tracker</h1>
             </div>
             <div className="row">
